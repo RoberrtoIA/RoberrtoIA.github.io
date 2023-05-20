@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Lacteos Parcial</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/favicon/cow.svg" />
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-white navigation-clean-button navS">
+                        <div class="container"><a class="navbar-brand border rounded p-2" href="index.html">BALR&nbsp;<span class="font-weight-bold" style="color: #FFC448;">Lacteos</span></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                            <div
+                                class="collapse navbar-collapse" id="navcol-1">
+                                <ul class="nav navbar-nav mr-auto">
+                                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Categorias</a>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Queso</a><a class="dropdown-item" role="presentation" href="#">Crema</a><a class="dropdown-item" role="presentation" href="#">Cuajada</a><a class="dropdown-item"
+                                                role="presentation" href="#">Kefir</a><a class="dropdown-item" role="presentation" href="#">Leche</a><a class="dropdown-item" role="presentation" href="#">Mantequilla<br></a><a class="dropdown-item" role="presentation"
+                                                href="#">Requeson</a><a class="dropdown-item" role="presentation" href="#">Suero</a><a class="dropdown-item" role="presentation" href="#">Yogurt</a></div>
+                                    </li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="404.html">Servicios</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a></li>
+                                </ul><span class="navbar-text actions d-none d-sm-none d-lg-block"> <button class="btn btn-fillB" type="button">Ofertas Especiales</button></span>
+                                <div class="row pl-2 d-none d-sm-none d-lg-block">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col"><span><i class="fa fa-map-marker"></i>&nbsp;Santa Ana</span></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><span><i class="fa fa-phone"></i>&nbsp;+503 2440 3080</span></div>
+                                        </div>
+                                    </div>
+                                </div><a href="404.html"><span class="d-lg-flex justify-content-lg-end border border-dark rounded-circle ml-2 px-2 py-2"><i class="fa fa-search text-dark"></i></span></a><a href="404.html"><span class="d-lg-flex justify-content-lg-end border border-dark rounded-circle ml-2 px-2 py-2"><i class="fa fa-user text-dark"></i></span></a>
+                                <a
+                                    href="Compra.html"><span class="d-lg-flex justify-content-lg-end border border-dark rounded-circle ml-2 px-2 py-2"><i class="fa fa-shopping-basket text-dark" id="cesta"></i></span></a>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <div class="col"><a class="text-secondary" href="index.html">Inicio</a><span class="font-weight-bold text-secondary" style="color: #ffc448;">&nbsp;&gt;&nbsp;</span><span class="font-weight-bold" style="color: #ffc448;">Lista de ordenes</span></div>
+        </div>
+        <div class="row">
+            <div class="col text-center py-2 my-5" style="background-color: #7ab5fb;"><span class="text-white"><i class="fas fa-crow"></i>&nbsp;Descuento especial en tu primer compra</span></div>
+        </div>
+        <div class="row">
+            <div class="col d-lg-flex align-items-lg-start"><button class="btn border rounded border-light shadow d-lg-flex justify-content-lg-center align-items-lg-center" id="btnVaciarCesta" type="button" style="color: #FFC448;">Vaciar carretilla</button></div>
+            <div class="col"><a class="btn border rounded border-light shadow float-right justify-content-lg-center align-items-lg-center btn-fillA" role="button" style="color: #ffffff;" href="catalogo.html">Categorias</a></div>
+        </div>
+        <div class="row">
+            <div class="col py-4">
+                <div class="row">
+                    <div class="col" id="colArticulosCarretilla"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="border rounded" style="background-color: #2E6FBF;">
+                    <h3 class="text-white font-weight-bold py-2 border-bottom pl-2">Detalles de tú orden</h3>
+                    <p class="pl-2 text-white">Descuentos:&nbsp;<span class="font-weight-bold">$0.00<br></span></p>
+                    <p class="pl-2 text-white">Descuentos por cupones:&nbsp;<span class="font-weight-bold">$0.00<br></span></p>
+                    <p class="pl-2 text-white">Gasto de envio:&nbsp;<span class="font-weight-bold">$0.00<br></span></p>
+                    <p class="pl-2 text-white">Transporte:&nbsp;<span class="font-weight-bold">$0.00<br></span></p>
+                    <p class="pl-2 text-white border-top border-white">Total:&nbsp;<span class="font-weight-bold shoppingCartTotal">$0.00<br></span></p>
+                    <p class="text-center text-white">Ingresa un código promocional</p>
+                    <div class="form-group"><input class="bg-warning border rounded justify-content-center form-control text-center" type="text" placeholder="BALR Codes" style="color: rgb(255,255,255);"><button class="btn btn-fillA mt-2" id="btnPagar" type="button">Proceder a pagar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div class="footer-clean mt-4">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="404.html">Web design</a></li>
+                            <li><a href="404.html">Web design<br></a></li>
+                            <li><a href="404.html">Web design<br></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Sobre nosotros</h3>
+                        <ul>
+                            <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Catàlogo</h3>
+                        <ul>
+                            <li><a href="catalogo.html">Catàlogo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social text-white font-weight-bold"><a href="#"><i class="fab fa-cc-visa"></i></a><a href="#"><i class="fab fa-cc-mastercard"></i></a><a href="#"><i class="fab fa-twitch"></i></a><a href="#"><i class="fab fa-paypal"></i></a>
+                        <p class="copyright">DESING BY BALR © 2020</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jsMain.js"></script>
+</body>
+
+</html>
